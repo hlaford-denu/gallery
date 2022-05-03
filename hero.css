@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald');
+
+body {
+    font-family: Oswald, sans-serif;
+}
+
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.heroImage {
+   background-image: url("10.jpg");
+
+  /* Set a specific height */
+  height: 100vh;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: right; 
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+.heroTxt {
+  display: flex;
+  flex-direction: column;
+  font-family: Oswald;
+  color: rgb(255,246,233);
+  /*background:rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);*/
+  font-size: 7vh;
+  /*width: fit-content;
+  height: fit-content;*/
+  margin-right: 10%;
+  animation-duration: 3s;
+  animation-name: movetxt;
+}
+
+@keyframes movetxt {
+  from {
+    margin-right: 0%;
+  }
+
+  to {
+    margin-right: 10%;
+  }
+}
+
+.btn {
+  font-family: Oswald;
+  width: fit-content;
+  border: none;  
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-size: 3vh;
+  background-color: rgb(255,246,233);
+  /*backdrop-filter: blur(4px);*/
+  opacity: 1;
+  transition: 0.3s;
+  /*background:rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);*/
+}
+
+.btn:hover {
+  opacity: 0.6;
+  /*backdrop-filter: blur(8px);*/
+}

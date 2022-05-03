@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylvine Muraro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sideContainer">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">Sylvine Muraro</a>
+            </div>
+            <div class="tabMenu">
+                <button class="tablink" onclick="openMenu('mosaic', 'gallery', this)" id="defaultOpen">Gallery</button>
+                <button class="tablink" onclick="openMenu('news', 'article', this)">News</button>
+                <button class="tablink" onclick="openMenu('about', 'bio', this)">About</button>
+            </div>
+        </div>
+        
+        <div class="sideMenu"> 
+
+            <div id="mosaic" class="tabcontent">
+                <p id="galleryTitle" class="title">"Paysages du vent d'autan"</p>
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Cinque Terre">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Cinque Terre">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Cinque Terre">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Cinque Terre">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Cinque Terre">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Cinque Terre">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Cinque Terre">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="9.jpg" style="width:100%" onclick="currentSlide(9)" alt="Cinque Terre">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="10.jpg" style="width:100%" onclick="currentSlide(10)" alt="Cinque Terre">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="11.jpg" style="width:100%" onclick="currentSlide(11)" alt="Cinque Terre">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="12.jpg" style="width:100%" onclick="currentSlide(12)" alt="Cinque Terre">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="13.jpg" style="width:100%" onclick="currentSlide(13)" alt="Cinque Terre">
+                    </div>
+                </div>
+               
+            </div>
+            
+            <div id="news" class="tabcontent">
+                <p class="title">News</p>
+                <div class="eventContainer">
+                    <div class="events">
+                        <p classe="date">25/06/2023</p>
+                        <p class="eventTitle">Exposition galerie du Caveau de l'Union de producteurs</p>
+                        <p class="eventDescription">La gallerie nous fait l'honneur de présenter la prochaine série de tableaux intitulée blablabla...</p>
+                    </div>
+                    <div class="events">
+                        <p classe="date">25/06/2023</p>
+                        <p class="eventTitle">Exposition galerie "El Toro Loco"</p>
+                        <p class="eventDescription">Les tableaux sont présentés en ce moment dans le restaurant el Toro Loco à blablabla...</p>
+                    </div>
+                    <div class="events">
+                        <p classe="date">25/06/2023</p>
+                        <p class="eventTitle">Galerie Baz'Art Café - Théâtre - Expos à Libourne</p>
+                        <p class="eventDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, nostrum reiciendis odio ab minima magni quisquam error facilis repellendus quas cupiditate, nihil vel maiores tempora, ducimus a labore eius laudantium?</p>
+                    </div>
+                    <div class="events">
+                        <p classe="date">25/06/2023</p>
+                        <p class="eventTitle">Exposition galerie du Caveau de l'Union de producteurs</p>
+                        <p class="eventDescription">La gallerie nous fait l'honneur de présenter la prochaine série de tableaux intitulée blablabla...</p> 
+                    </div>
+                </div>
+            </div>
+            
+            <div id="about" class="tabcontent">
+                <p class="title">Contact</p>
+                <p>For further information and enquiries, please contact : ddddd@ppppp.com</p>
+                <p>email</p>
+                <p>address</p>
+                <p>etc....</p>
+            </div>
+            
+              
+        </div>
+        
+        <!--<div class="footer">
+                (c) 2022 - Sylvine Muraro. All rights reserved
+        </div>
+        !-->
+    </div>
+    
+    
+    <div id="gallery" class="slideShow">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        
+        <div class="mySlides">
+            <img src="1.jpg">
+            <div class="caption">
+                <div class="captionTitle">Le port de Versoix</div>
+                <div>2018</div>
+                <div>45" x 22"</div>
+            </div>
+        </div>
+        
+        <div class="mySlides">
+            <img src="2.jpg">
+            <div class="caption">
+                <p>blablablablablablabla</p>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <img src="3.jpg">
+            <div class="caption">
+                <p>blablablablablablabla</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img src="4.jpg">
+            <div class="caption">
+                <p>blablablablablablabla</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img src="5.jpg">
+            <div class="caption">
+                <p>blablablablablablabla</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img src="6.jpg">
+            <div class="caption">
+                <p>blablablablablablabla</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img src="7.jpg">
+            <div class="caption">
+                <p>blablablablablablabla</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img src="8.jpg">
+            <div class="caption">
+                <p>blablablablablablabla</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img src="9.jpg">
+            <div class="caption">
+                <p>blablablablablablabla</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img src="10.jpg">
+            <div class="caption">
+                <p>blablablablablablabla</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img src="11.jpg">
+            <div class="caption">
+                <p>blablablablablablabla</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img src="12.jpg">
+            <div class="caption">
+                <p>blablablablablablabla</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <img src="13.jpg">
+            <div class="caption">
+                <p>blablablablablablabla</p>
+            </div>
+        </div>
+
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+    </div>
+
+    <div id="bio" class="slideShow">
+        <div class="bioContainer">
+            <p id="aboutTitle" class="title">About the artist</p>
+            <div class="bio">
+                <div class="profilePicture">
+                    <img src="profile.jpg" alt="Sylvine Muraro">
+                </div>
+                <div class="bioText">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nobis excepturi accusamus quod aut dolorum ducimus id accusantium doloribus harum sint suscipit, recusandae distinctio tempora laboriosam? Dolorum minus quo debitis!
+                </div>
+            </div>
+                
+        </div>
+        
+    </div>
+
+    <div id="article" class="slideShow">
+        <div class="articleContainer">
+            <p class="title">Press</p>
+            <div class = "articlePicture">
+                <img src="resistant.jpg" alt="Le Résistant">
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="main.js"></script>
+
+</body>
+</html>
